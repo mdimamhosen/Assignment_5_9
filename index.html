@@ -34,25 +34,29 @@
       <!-- banner section -->
       <div>
         <div
-          class="flex -z-10 bg-cover bg-center h-[27rem]"
+          class="flex -z-10 bg-cover bg-center h-[28rem]"
           style="background-image: url('./images/banner.png')"
         >
           <!-- <div class="absolute inset-0 bg-black opacity-10"></div> -->
           <div class="flex items-center justify-center">
             <div class="text-center">
-              <h2 class="text-4xl leading-relaxed font-bold text-white">
+              <h2
+                class="text-2xl md:text-4xl leading-relaxed font-bold text-white"
+              >
                 End-to-End Travel with <br />
                 <span class="text-green-500"> P Paribahan </span>
               </h2>
 
-              <p class="mt-4 w-[70%] mx-auto text-white">
+              <p
+                class="mt-4 w-[90%] md:w-[70%] text-sm md:text-lg mx-auto text-white"
+              >
                 P-Ticket: Your premier destination for convenient and secure
                 online ticket purchases. Streamlined, reliable, and hassle-free
                 ticketing experience."
               </p>
 
               <a
-                class="my-4 inline-block px-6 py-3 cursor-pointer bg-green-500 font-bold rounded"
+                class="my-2 md:my-4 inline-block px-3 py-1 md:px-6 md:py-3 cursor-pointer bg-green-500 font-bold rounded"
                 href="#section2"
                 >Buy Tickets</a
               >
@@ -96,34 +100,39 @@
         class="flex gap-y-3 flex-col md:flex-row md:gap-y-0 items-center justify-between my-16 w-11/12 mx-auto"
       >
         <div
-          class="flex w-[80%] md:w-[49%] items-center justify-center px-8 rounded-xl bg-yellow-400"
+          class="flex w-[95%] py-4 md:py-0 md:w-[49%] items-center justify-center px-8 rounded-xl bg-yellow-400"
         >
-          <div>
+          <div
+            class="border-r md:border-r-0 border-r-gray-600 border-dashed pr-1 md:pr-0 mr-2 md:mr-0"
+          >
             <h1 class="font-bold text-3xl">15% OFF</h1>
             <p class="font-bold mt-2">
               on your next purchase <br />
               <span class="font-thin">use by February 2025</span>
             </p>
           </div>
-          <div>
-            <img class=" " src="./images/cupon-devider.png" alt="" />
+          <div class="hidden md:block">
+            <img 1class=" " src="./images/cupon-devider.png" alt="" />
           </div>
+
           <div>
             <h1 class="font-bold text-3xl">NEW15</h1>
             <p class="font-thin mt-2">Coupon Code</p>
           </div>
         </div>
         <div
-          class="flex w-[80%] md:w-[49%] justify-center items-center px-8 rounded-xl bg-pink-400"
+          class="flex w-[95%] py-4 md:py-0 md:w-[49%] justify-center items-center px-8 rounded-xl bg-pink-400"
         >
-          <div>
+          <div
+            class="border-r md:border-r-0 border-r-gray-600 border-dashed pr-1 md:pr-0 mr-2 md:mr-0"
+          >
             <h1 class="font-bold text-3xl">20% OFF</h1>
             <p class="font-bold mt-2">
               on your next purchase <br />
               <span class="font-thin">use by February 2025</span>
             </p>
           </div>
-          <div>
+          <div class="hidden md:block">
             <img src="./images/cupon-devider.png" alt="" />
           </div>
           <div>
@@ -152,14 +161,16 @@
               safety, and seamless travel experiences nationwide
             </p>
           </div>
-          <div class="flex gap-2 mx-auto w-11/12 rounded-xl px-4 bg-white">
-            <div class="flex flex-col justify-evenly w-[73%]">
+          <div
+            class="flex gap-2 mx-auto w-11/12 rounded-xl py-2 md:py-0 px-4 bg-white"
+          >
+            <div class="flex flex-col justify-evenly md:w-[73%] w-[100%]">
               <div class="flex justify-between items-center">
                 <div class="flex gap-2 items-center">
                   <div>
                     <img width="50px" src="./images/bus-logo.png" alt="" />
                   </div>
-                  <p class="font-bold">
+                  <p class="font-bold text-sm md:text-md">
                     Padda Paribahan <br />
                     <span class="font-thin">Coach-009-WEB ! Echonomy</span>
                   </p>
@@ -174,7 +185,7 @@
                 </div>
               </div>
               <div
-                class="flex flex-col justify-center gap-2 bg-gray-100 p-3 rounded-lg"
+                class="flex flex-col justify-center gap-2 mt-1 bg-gray-100 p-3 rounded-lg"
               >
                 <div class="flex items-center justify-between">
                   <h1>Route</h1>
@@ -187,22 +198,26 @@
                 </div>
                 <div class="h-[1px] border-t border-t-gray-400"></div>
                 <div class="flex justify-between items-center">
-                  <button class="bg-gray-200 p-1 rounded-md">
+                  <button class="bg-gray-200 text-sm md:text-md p-1 rounded-md">
                     Boarding Point - Laxmipur
                   </button>
-                  <button class="bg-gray-200 p-1 rounded-md">
+                  <button class="bg-gray-200 text-sm md:text-md p-1 rounded-md">
                     Dropping Point - Bogura
                   </button>
-                  <button class="bg-gray-200 p-1 rounded-md">
+                  <button
+                    class="bg-gray-200 text-sm md:text-md hidden md:block p-1 rounded-md"
+                  >
                     Est. Time - 11 Hour
                   </button>
                 </div>
               </div>
             </div>
-            <div class="h-[300px] w-[5%]">
+            <div class="h-[300px] hidden md:flex w-[5%]">
               <img class="h-full" src="./images/info-devider.png" alt="" />
             </div>
-            <div class="flex flex-col justify-center items-center w-[20%]">
+            <div
+              class="hidden md:flex flex-col justify-center items-center w-[20%]"
+            >
               <div><img src="./images/fare.png" alt="" /></div>
               <h1 class="font-bold">550 Taka</h1>
               <p class="text-sm">Per Seat</p>
@@ -211,10 +226,12 @@
           <!--main seat section -->
           <div
             id="section2"
-            class="bg-white w-11/12 flex gap-2 mx-auto mt-8 rounded-xl px-4 py-4"
+            class="bg-white w-11/12 flex flex-col md:flex-row gap-2 mx-auto mt-8 rounded-xl px-4 py-4"
           >
             <!-- left section -->
-            <div class="w-[65%] border-r border-dashed pr-2">
+            <div
+              class="w-full md:w-[65%] md:border-r border-r-0 border-dashed pr-2"
+            >
               <h1 class="font-bold">Select Your Seat</h1>
               <div class="h-[1px] my-2 border-t border-t-gray-200"></div>
 
@@ -256,14 +273,14 @@
                       <button
                         onclick="addToCart('A1')"
                         id="A1 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         A1
                       </button>
                       <button
                         onclick="addToCart('A2')"
                         id="A2 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         A2
                       </button>
@@ -273,14 +290,14 @@
                       <button
                         onclick="addToCart('A3')"
                         id="A3 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         A3
                       </button>
                       <button
                         onclick="addToCart('A4')"
                         id="A4 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         A4
                       </button>
@@ -294,14 +311,14 @@
                       <button
                         onclick="addToCart('B1')"
                         id="B1 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         B1
                       </button>
                       <button
                         onclick="addToCart('B2')"
                         id="B2 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         B2
                       </button>
@@ -311,14 +328,14 @@
                       <button
                         onclick="addToCart('B3')"
                         id="B3 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         B3
                       </button>
                       <button
                         onclick="addToCart('B4')"
                         id="B4 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         B4
                       </button>
@@ -333,14 +350,14 @@
                       <button
                         onclick="addToCart('C1')"
                         id="C1 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         C1
                       </button>
                       <button
                         onclick="addToCart('C2')"
                         id="C2 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         C2
                       </button>
@@ -350,14 +367,14 @@
                       <button
                         onclick="addToCart('C3')"
                         id="C3 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         C3
                       </button>
                       <button
                         onclick="addToCart('C4')"
                         id="C4 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         C4
                       </button>
@@ -371,14 +388,14 @@
                       <button
                         onclick="addToCart('D1')"
                         id="D1 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         D1
                       </button>
                       <button
                         onclick="addToCart('D2')"
                         id="D2 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         D2
                       </button>
@@ -388,14 +405,14 @@
                       <button
                         onclick="addToCart('D3')"
                         id="D3 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         D3
                       </button>
                       <button
                         onclick="addToCart('D4')"
                         id="D4 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         D4
                       </button>
@@ -410,14 +427,14 @@
                       <button
                         onclick="addToCart('E1')"
                         id="E1 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         E1
                       </button>
                       <button
                         onclick="addToCart('E2')"
                         id="E2 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         E2
                       </button>
@@ -427,14 +444,14 @@
                       <button
                         onclick="addToCart('E3')"
                         id="E3 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         E3
                       </button>
                       <button
                         onclick="addToCart('E4')"
                         id="E4 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         E4
                       </button>
@@ -449,14 +466,14 @@
                       <button
                         onclick="addToCart('F1')"
                         id="F1 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         F1
                       </button>
                       <button
                         onclick="addToCart('F2')"
                         id="F2 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         F2
                       </button>
@@ -466,14 +483,14 @@
                       <button
                         onclick="addToCart('F3')"
                         id="F3 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         F3
                       </button>
                       <button
                         onclick="addToCart('F4')"
                         id="F4 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         F4
                       </button>
@@ -488,14 +505,14 @@
                       <button
                         onclick="addToCart('G1')"
                         id="G1 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         G1
                       </button>
                       <button
                         onclick="addToCart('G2')"
                         id="G2 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         G2
                       </button>
@@ -505,14 +522,14 @@
                       <button
                         onclick="addToCart('G3')"
                         id="G3 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         G3
                       </button>
                       <button
                         onclick="addToCart('G4')"
                         id="G4 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         G4
                       </button>
@@ -527,14 +544,14 @@
                       <button
                         onclick="addToCart('H1')"
                         id="H1 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         H1
                       </button>
                       <button
                         onclick="addToCart('H2')"
                         id="H2 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         H2
                       </button>
@@ -544,14 +561,14 @@
                       <button
                         onclick="addToCart('H3')"
                         id="H3 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         H3
                       </button>
                       <button
                         onclick="addToCart('H4')"
                         id="H4 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         H4
                       </button>
@@ -566,14 +583,14 @@
                       <button
                         onclick="addToCart('I1')"
                         id="I1 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         I1
                       </button>
                       <button
                         onclick="addToCart('I2')"
                         id="I2 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         I2
                       </button>
@@ -590,7 +607,7 @@
                       <button
                         onclick="addToCart('I4')"
                         id="I4 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         I4
                       </button>
@@ -605,14 +622,14 @@
                       <button
                         onclick="addToCart('J1')"
                         id="J1 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         J1
                       </button>
                       <button
                         onclick="addToCart('J2')"
                         id="J2 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         J2
                       </button>
@@ -622,14 +639,14 @@
                       <button
                         onclick="addToCart('J3')"
                         id="J3 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         J3
                       </button>
                       <button
                         onclick="addToCart('J4')"
                         id="J4 seat"
-                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
                       >
                         J4
                       </button>
@@ -640,7 +657,7 @@
             </div>
 
             <!-- right section -->
-            <div class="w-[33%]">
+            <div class="md:w-[33%] w-full">
               <h1 class="font-bold">Select Your Seat</h1>
               <div
                 class="h-[1px] my-2 border-t border-dashed border-t-gray-200"
@@ -795,7 +812,7 @@
     <div
       id="modal"
       style="display: none"
-      class="flex justify-center items-centers mt-[16rem] h-full"
+      class="flex justify-center items-centers mt-[7rem] md:mt-[16rem] h-full"
     >
       <div
         class="bg-white flex flex-col items-center py-12 px-8 text-center gap-y-6 w-[70%] mx-auto"
@@ -805,19 +822,19 @@
           <h1 class="text-xl font-bold text-green-500">Success</h1>
         </div>
         <div>
-          <p class="font-semibold w-11/12 mx-auto mb-2">
+          <p class="font-semibold w-full md:w-11/12 mx-auto mb-2">
             Thank you for Booking Our Bus Seats. We are working hard to find the
             best service and deals for you.
           </p>
-          <p class="font-thin">
+          <p class="font-thin w-full md:w-11/12">
             Shortly you will find a confirmation in your email.
           </p>
         </div>
         <div class="w-[60%]">
           <button
-            class="text-white w-[60%] py-2 rounded-3xl text-lg bg-green-600"
+            class="text-white md:w-[60%] w-full py-2 rounded-3xl text-lg bg-green-600"
           >
-            Continue
+            <a href="./index.html">Continue</a>
           </button>
         </div>
       </div>
