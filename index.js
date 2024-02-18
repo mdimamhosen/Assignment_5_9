@@ -19,7 +19,7 @@ function addToCart(seat, seatClass, price) {
 
       const seatInfo = document.createElement("div");
       seatInfo.innerHTML = `
-        <div class="flex justify-between font-thin text-gray-600">
+        <div class="flex justify-between font-semibold text-gray-600">
           <h1>${seat}</h1>
           <h1>${seatClass}</h1>
           <h1>${price}</h1>
@@ -50,6 +50,9 @@ function addToCart(seat, seatClass, price) {
   const leftNumbersOfSeatElement = document.getElementById("leftNumbersOfSeat");
   const leftSeat = 40 - selectedSeatsCount;
   leftNumbersOfSeatElement.innerText = `${leftSeat} Seats Left`;
+
+  const totalSeatElement = document.getElementById("totalSeat");
+  totalSeatElement.innerText = `${selectedSeatsCount}`;
 }
 
 function cuponHandler() {

@@ -663,9 +663,17 @@
                 class="h-[1px] my-2 border-t border-dashed border-t-gray-200"
               ></div>
               <!-- cart section -->
-              <div class="bg-gray-100 p-2 my-4 flex flex-col gap-y-2">
+              <div class="bg-gray-100 px-2 py-4 my-4 flex flex-col gap-y-2">
                 <div class="flex items-center justify-between">
-                  <h1 class="font-bold">Seat</h1>
+                  <h1 class="font-bold relative">
+                    Seat
+                    <p
+                      id="totalSeat"
+                      class="bg-green-600 absolute -top-2 -right-5 flex justify-center text-white items-center h[17px] w-[17px] rounded-full"
+                    >
+                      0
+                    </p>
+                  </h1>
                   <h1 class="font-bold">Class</h1>
                   <h1 class="font-bold">Price</h1>
                 </div>
