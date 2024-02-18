@@ -4,7 +4,7 @@ let selectedSeats = [];
 
 function addToCart(seat, seatClass, price) {
   seatClass = "Echonomy";
-  price = 500;
+  price = 550;
   const seatButton = document.getElementById(seat + " seat");
   const cart = document.getElementById("cart");
 
@@ -44,7 +44,7 @@ function addToCart(seat, seatClass, price) {
     }
   }
   const totalPriceElement = document.getElementById("totalPrice");
-  const totalPrice = selectedSeatsCount * 500;
+  const totalPrice = selectedSeatsCount * 550;
   totalPriceElement.innerText = `BDT ${totalPrice}`;
 
   const leftNumbersOfSeatElement = document.getElementById("leftNumbersOfSeat");
@@ -64,27 +64,27 @@ function cuponHandler() {
     // Button.disabled = false;
     Button.removeAttribute("disabled");
     const grandTotal =
-      selectedSeatsCount * 500 - (selectedSeatsCount * 500 * 0.15).toFixed(2);
+      selectedSeatsCount * 550 - (selectedSeatsCount * 550 * 0.15).toFixed(2);
     grandTotalElement.innerText = `BDT ${grandTotal}`;
     const cuponContainer = document.getElementById("cuponContainer");
     cuponContainer.classList.add("hidden");
     const discountContainer = document.getElementById("discountContainer");
     discountContainer.style.display = "flex";
     const discount = document.getElementById("discount");
-    discount.innerText = `BDT ${(selectedSeatsCount * 500 * 0.15).toFixed(2)}`;
+    discount.innerText = `BDT ${(selectedSeatsCount * 550 * 0.15).toFixed(2)}`;
     // console.log(inputValue);
   } else if (inputValue === "Couple 20") {
     // Button.disabled = false;
     Button.removeAttribute("disabled");
     const grandTotal =
-      selectedSeatsCount * 500 - (selectedSeatsCount * 500 * 0.2).toFixed(2);
+      selectedSeatsCount * 550 - (selectedSeatsCount * 550 * 0.2).toFixed(2);
     grandTotalElement.innerText = `BDT ${grandTotal}`;
     const cuponContainer = document.getElementById("cuponContainer");
     cuponContainer.classList.add("hidden");
     const discountContainer = document.getElementById("discountContainer");
     discountContainer.style.display = "flex";
     const discount = document.getElementById("discount");
-    discount.innerText = `BDT ${(selectedSeatsCount * 500 * 0.2).toFixed(2)}`;
+    discount.innerText = `BDT ${(selectedSeatsCount * 550 * 0.2).toFixed(2)}`;
     // console.log(inputValue);
   } else {
     // Button.disabled = true;
@@ -101,7 +101,7 @@ function testHandler() {
   const finalSubmitButton = document.getElementById("finalSubmit");
   const modal = document.getElementById("modal");
   const main = document.getElementById("main");
-  if (!isNaN(number) && number > 0) {
+  if (!isNaN(number) && number > 0 && selectedSeatsCount > 0) {
     // finalSubmitButton.disabled = false;
     finalSubmitButton.removeAttribute("disabled");
     modal.style.display = "block";
