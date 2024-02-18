@@ -89,7 +89,6 @@ function cuponHandler() {
   } else {
     // Button.disabled = true;
     Button.setAttribute("disabled");
-    // alert("Please enter correct cupon code.");
     // console.log(why);
   }
 }
