@@ -15,7 +15,6 @@
           <h1 class="text-2xl font-bold">P-Ticket</h1>
         </div>
         <div>
-          <a href="#section1">Go to Section 1</a>
           <ul
             class="md:flex hidden justify-center items-center gap-x-3 text-gray-700"
           >
@@ -35,11 +34,11 @@
       <!-- banner section -->
       <div>
         <div
-          class="relative -z-10 bg-cover bg-center h-[27rem]"
+          class="flex -z-10 bg-cover bg-center h-[27rem]"
           style="background-image: url('./images/banner.png')"
         >
-          <div class="absolute inset-0 bg-black opacity-10"></div>
-          <div class="absolute inset-0 flex items-center justify-center">
+          <!-- <div class="absolute inset-0 bg-black opacity-10"></div> -->
+          <div class="flex items-center justify-center">
             <div class="text-center">
               <h2 class="text-4xl leading-relaxed font-bold text-white">
                 End-to-End Travel with <br />
@@ -51,14 +50,16 @@
                 online ticket purchases. Streamlined, reliable, and hassle-free
                 ticketing experience."
               </p>
-              <button
-                class="my-4 px-6 py-3 cursor-pointer bg-green-500 font-bold rounded"
+
+              <a
+                class="my-4 inline-block px-6 py-3 cursor-pointer bg-green-500 font-bold rounded"
+                href="#section1"
+                >Buy Tickets</a
               >
-                <a href="#mainSection">Buy Tickets</a>
-              </button>
             </div>
           </div>
         </div>
+
         <div class="md:flex hidden w-11/12 mx-auto -mt-9 justify-between z-10">
           <div
             class="flex bg-white items-center gap-1 px-4 py-2 rounded-xl border-b-2 border-b-green-400"
@@ -140,7 +141,7 @@
       </div>
       <!-- main section -->
       <div
-        id="mainSection"
+        id="section1"
         class="border-t-2 bg-gray-200 rounded-2xl border-t-green-500"
       >
         <div class="py-16">
