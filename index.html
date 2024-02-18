@@ -7,13 +7,14 @@
     <title>Document</title>
   </head>
 
-  <body>
-    <div class="hidden">
+  <body class="h-full">
+    <div id="main">
       <nav class="flex w-11/12 mx-auto justify-between items-center py-4">
         <div>
           <h1 class="text-2xl font-bold">P-Ticket</h1>
         </div>
         <div>
+          <a href="#section1">Go to Section 1</a>
           <ul
             class="md:flex hidden justify-center items-center gap-x-3 text-gray-700"
           >
@@ -23,6 +24,7 @@
             <li>Search</li>
           </ul>
         </div>
+
         <button
           class="flex justify-center items-center gap-2 px-3 py-1 border text-green-500 font-bold border-green-400 bg-green-300 bg-opacity-20 rounded-md"
         >
@@ -48,8 +50,10 @@
                 online ticket purchases. Streamlined, reliable, and hassle-free
                 ticketing experience."
               </p>
-              <button class="my-4 px-6 py-3 bg-green-500 font-bold rounded">
-                <a class="cursor-pointer" href="">Buy Tickets</a>
+              <button
+                class="my-4 px-6 py-3 cursor-pointer bg-green-500 font-bold rounded"
+              >
+                <a href="#mainSection">Buy Tickets</a>
               </button>
             </div>
           </div>
@@ -134,7 +138,10 @@
         </button>
       </div>
       <!-- main section -->
-      <div class="border-t-2 bg-gray-200 rounded-2xl border-t-green-500">
+      <div
+        id="mainSection"
+        class="border-t-2 bg-gray-200 rounded-2xl border-t-green-500"
+      >
         <div class="py-16">
           <div class="mb-6 mx-auto w-11/12">
             <h1 class="text-center text-2xl font-bold">Padda Paribahan</h1>
@@ -201,6 +208,7 @@
           </div>
           <!--main seat section -->
           <div
+            id="section1"
             class="bg-white w-11/12 flex gap-2 mx-auto mt-8 rounded-xl px-4 py-4"
           >
             <!-- left section -->
@@ -723,8 +731,9 @@
                       placeholder="Enter your email id..."
                     />
                   </div>
+
                   <button
-                    onclick="nextHandler()"
+                    onclick="testHandler()"
                     id="finalSubmit"
                     class="bg-green-500 rounded-md mt-2 font-bold text-white w-full py-2"
                   >
@@ -781,19 +790,35 @@
         </div>
       </div>
     </div>
-    <div>
-      <div><img src="./images/success.png" alt="" /></div>
-      <div>
-        <h1>Success</h1>
+    <div
+      id="modal"
+      style="display: none"
+      class="flex justify-center items-centers mt-[16rem] h-full"
+    >
+      <div
+        class="bg-white flex flex-col items-center py-12 px-8 text-center gap-y-6 w-[70%] mx-auto"
+      >
+        <div><img src="./images/success.png" alt="" /></div>
+        <div>
+          <h1 class="text-xl font-bold text-green-500">Success</h1>
+        </div>
+        <div>
+          <p class="font-semibold w-11/12 mx-auto mb-2">
+            Thank you for Booking Our Bus Seats. We are working hard to find the
+            best service and deals for you.
+          </p>
+          <p class="font-thin">
+            Shortly you will find a confirmation in your email.
+          </p>
+        </div>
+        <div class="w-[60%]">
+          <button
+            class="text-white w-[60%] py-2 rounded-3xl text-lg bg-green-600"
+          >
+            Continue
+          </button>
+        </div>
       </div>
-      <div>
-        <p>
-          Thank you for Booking Our Bus Seats. We are working hard to find the
-          best service and deals for you.
-        </p>
-        <p>Shortly you will find a confirmation in your email.</p>
-      </div>
-      <div>Continue</div>
     </div>
     <script src="./index.js"></script>
   </body>

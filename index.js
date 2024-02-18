@@ -61,7 +61,8 @@ function cuponHandler() {
 
   //   console.log(inputValue);
   if (inputValue === "NEW15") {
-    Button.disabled = false;
+    // Button.disabled = false;
+    Button.removeAttribute("disabled");
     const grandTotal =
       selectedSeatsCount * 500 - (selectedSeatsCount * 500 * 0.15).toFixed(2);
     grandTotalElement.innerText = `BDT ${grandTotal}`;
@@ -73,7 +74,8 @@ function cuponHandler() {
     discount.innerText = `BDT ${(selectedSeatsCount * 500 * 0.15).toFixed(2)}`;
     // console.log(inputValue);
   } else if (inputValue === "Couple 20") {
-    Button.disabled = false;
+    // Button.disabled = false;
+    Button.removeAttribute("disabled");
     const grandTotal =
       selectedSeatsCount * 500 - (selectedSeatsCount * 500 * 0.2).toFixed(2);
     grandTotalElement.innerText = `BDT ${grandTotal}`;
@@ -85,23 +87,29 @@ function cuponHandler() {
     discount.innerText = `BDT ${(selectedSeatsCount * 500 * 0.2).toFixed(2)}`;
     // console.log(inputValue);
   } else {
-    Button.disabled = true;
+    // Button.disabled = true;
+    Button.setAttribute("disabled");
     // alert("Please enter correct cupon code.");
     // console.log(why);
   }
 }
 
-function nextHandler() {
+function testHandler() {
   const numberElement = document.getElementById("number");
   const number = parseFloat(numberElement.value);
 
   const finalSubmitButton = document.getElementById("finalSubmit");
-
+  const modal = document.getElementById("modal");
+  const main = document.getElementById("main");
   if (!isNaN(number) && number > 0) {
-    finalSubmitButton.disabled = false;
+    // finalSubmitButton.disabled = false;
+    finalSubmitButton.removeAttribute("disabled");
+    modal.style.display = "block";
+    main.style.display = "none";
     console.log(number);
   } else {
-    finalSubmitButton.disabled = true;
+    // finalSubmitButton.disabled = true;
+    finalSubmitButton.setAttribute("disabled");
     console.log("Invalid number");
   }
 }
